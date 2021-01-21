@@ -24,9 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        with: 
-          ref: release
-
       - uses: Azure/docker-login@v1
         with:
           login-server: futuriceticregistery.azurecr.io
@@ -34,5 +31,5 @@ jobs:
           password: ${{ secrets.REGISTRY_PASSWORD }}
 
       - run: |
-          docker build . -t futuriceticregistery.azurecr.io/my-futuricetic-calculator:latest
-          docker push futuriceticregistery.azurecr.io/my-futuricetic-calculator:latest
+          docker build . -t futuriceticregistery.azurecr.io/my-futuricetic-calculator:${{ github.sha }}
+          docker push futuriceticregistery.azurecr.io/my-futuricetic-calculator:${{ github.sha }}
