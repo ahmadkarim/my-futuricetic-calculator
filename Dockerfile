@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Run app.py when the container launches
 
-CMD ["gunicorn", "-w 4", "-b", "0.0.0.0:8000", "app:app"]
+CMD ["gunicorn", "-w 4", "-b", "0.0.0.0:80", "app:app"]
