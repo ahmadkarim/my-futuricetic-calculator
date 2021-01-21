@@ -20,6 +20,4 @@ jobs:
     - name: Test with unittest
       run: |
         python -m unittest test_basic.py
-    - name: Publish Unit Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v1.6
       
