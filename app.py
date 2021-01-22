@@ -57,7 +57,7 @@ def respond():
 # A test message
 @app.route('/')
 def index():
-    return "<h1>I am a Futuricetic calculator and I work!!</h1>"
+    return "<h1>I am a Futuricetic calculator and I work!!!</h1>"
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
