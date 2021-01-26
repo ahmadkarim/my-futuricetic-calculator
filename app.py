@@ -59,6 +59,10 @@ def respond():
 def index():
     return "<h1>I am a Futuricetic calculator and I work!!!</h1>"
 
+@app.route('/health')
+def healthCheck():
+    return "<h1>I am a healthy app!</h1>"
+
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
     app.run(threaded=True, port=80)
