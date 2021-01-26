@@ -5,7 +5,7 @@ A simple calculator that parses the querry string and responds with the solved c
  
  A base64 encoded expresssion can be sent as follows:
  
- expression to be solved: 2 * (23/(3*3))- 23 * (2*3)
+ expression to be solved: 2 * (23/(3 * 3))- 23 * (2 * 3)
  
  base64encoded string : MiAqICgyMy8oMyozKSktIDIzICogKDIqMyk=
  
