@@ -63,9 +63,6 @@ def index():
 def healthCheck():
     return "<h1>I am a healthy app!</h1>"
 
-@app.route('/health2')
-def healthCheck2():
-    return "<h1>I am a healthy app! Accenture test</h1>"
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
