@@ -63,6 +63,10 @@ def index():
 def healthCheck():
     return "<h1>I am a healthy app!</h1>"
 
+@app.route('/health3')
+def healthCheck3():
+    return "<h1>I am a healthy app for MatchbaseX!</h1>"    
+
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
